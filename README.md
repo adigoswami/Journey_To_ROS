@@ -31,7 +31,7 @@ https://catkin-tools.readthedocs.io/en/latest/installing.html
 
 NOTE: Simply installing it with pip should be enough. But if you still run into problem try with apt-get.
 
-## Get started
+## The Workspace
 
 Now let's create a catkin workspace.
 
@@ -71,3 +71,22 @@ NOTE: 'cd' means change directory and this command takes you to the workspace di
 catkin_make
 ```
 NOTE: When this command runs successfully, Congratulate yourself! You have created a catkin workspace.
+
+## Getting started
+
+Now that we have installed Ubuntu, ROS and a workspace, let's try something fun. Open a new terminal. Run this command:
+```
+roscore
+```
+
+Now open another terminal to run this command to launch a turtlebot robot in gazebo:
+```
+roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch
+```
+
+Open one other terminal and run this command as well to control and move the robot:
+```
+roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+```
+
+If you can run these commands and see if these work as stated above you have been doing good so far.
