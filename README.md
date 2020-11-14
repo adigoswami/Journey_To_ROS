@@ -58,15 +58,15 @@ In usual case, when you write any program (C++ programs to be specific) how do y
 9. That's where catkin tools come in. These tools are used to compile all the code files in your workspace and create their executable versions ready without your help.
 
 10. That's why you need to have catkin workspace to work with ROS. But how do we get one ? Run following commands in your terminal (in /home directory) to have a catkin workspace.
-'''
+```
 mkdir -p ~/catkin_ws/src
-'''
+```
 NOTE: You can have any name as your workspace but it is good to have 'ws' after your worskpace name so that you can identify it easily among your other folders present there (trust me it helps!).
-'''
+```
 cd ~/catkin_ws/
-'''
+```
 NOTE: 'cd' means change directory and this command takes you to the workspace directory that you just created in your home directory.
-'''
+```
 catkin_make
-'''
+```
 NOTE: When this command runs successfully, Congratulate yourself! You have created a catkin workspace.
